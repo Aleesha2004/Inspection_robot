@@ -4,41 +4,40 @@ This project focuses on the development of an autonomous quadruped inspection ro
 
 The system is designed to autonomously map unknown environments, navigate between inspection checkpoints, capture images of manufactured components, detect defects such as dents, scratches, cracks, and paint imperfections, and generate inspection reports. A real-time dashboard provides visualization of robot status, mission progress, inspection results, and collected data.
 
-## Key Features
+## Project Breakdown
 
-- Quadruped Robot Simulation
-- ROS 2 Jazzy Framework
-- Fusion 360 CAD Integration
-- URDF/Xacro Robot Modeling
-- LiDAR, Camera, and IMU Integration
-- Gazebo Simulation Environment
-- SLAM-Based Mapping
-- Nav2 Autonomous Navigation
-- Inspection Point Management
-- Computer Vision-Based Defect Detection
-- Real-Time Monitoring Dashboard
-- Industrial Inspection Workflow
+| Phase | Description | Target Date |
+|--------|------------|------------|
+| Phase 1 | Creating the quadruped robot in Fusion 360 and converting it into STL files | 16-06-2026 |
+| Phase 2 | Converting the STL files into URDF/Xacro files | 16-06-2026 |
+| Phase 3 | Integrating Camera, LiDAR, and IMU sensors and visualizing the robot in RViz | 17-06-2026 |
+| Phase 4 | Setting up Gazebo simulation environment and spawning the robot | 18-06-2026 |
+| Phase 5 | Implementing robot control and basic quadruped locomotion | 19-06-2026 |
+| Phase 6 | SLAM-based mapping of the environment | 20-06-2026 |
+| Phase 7 | Autonomous navigation using Nav2 | 21-06-2026 and 22-06-2026 |
+| Phase 8 | Inspection mission planning and checkpoint management | 23-06-2026 and 24-06-2026 |
+| Phase 9 | Computer vision-based car body panel defect detection | 25-06-2026 |
+| Phase 10 | Dashboard development, reporting, and monitoring system | 26-06-2026 |
 
-## Target Application
+## Target Defects
 
-Automotive Manufacturing Industry – Automated Inspection of Car Body Panels for:
-- Dents
-- Scratches
-- Surface Cracks
-- Paint Defects
+- Dent Detection
+- Scratch Detection
+- Crack Detection
+- Paint Defect Detection
 
 ## Technology Stack
 
 - ROS 2 Jazzy
-- Python
-- C++
 - Fusion 360
+- URDF / Xacro
 - Gazebo
 - RViz
 - SLAM Toolbox
 - Nav2
 - OpenCV
 - YOLO
+- Python
 - FastAPI
 - React
 - PostgreSQL
