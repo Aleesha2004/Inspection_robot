@@ -1,0 +1,15 @@
+# ROS2 build files
+inspection_robot_ws/build/
+inspection_robot_ws/install/
+inspection_robot_ws/log/
+
+# Python
+*.pyc
+__pycache__/
+
+# VSCode
+.vscode/
+
+# Temporary files
+*.swp
+*.tmp
