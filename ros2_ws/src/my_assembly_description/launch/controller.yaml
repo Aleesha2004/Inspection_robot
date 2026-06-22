@@ -1,0 +1,55 @@
+my_assembly_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  upper_leg_fl_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: upper_leg_fl_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  upper_leg_fr_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: upper_leg_fr_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  upper_leg_rl_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: upper_leg_rl_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  upper_leg_rr_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: upper_leg_rr_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  lower_leg_fl_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: lower_leg_fl_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  lower_leg_fr_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: lower_leg_fr_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  lower_leg_rl_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: lower_leg_rl_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  lower_leg_rr_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: lower_leg_rr_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  foot_fl_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: foot_fl_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  foot_fr_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: foot_fr_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  foot_rl_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: foot_rl_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  foot_rr_joint_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: foot_rr_joint
+    pid: {p: 100.0, i: 0.01, d: 10.0}

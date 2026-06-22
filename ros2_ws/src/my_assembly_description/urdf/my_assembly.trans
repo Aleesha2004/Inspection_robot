@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<robot name="my_assembly" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="upper_leg_fl_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="upper_leg_fl_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="upper_leg_fl_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="upper_leg_fr_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="upper_leg_fr_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="upper_leg_fr_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="upper_leg_rl_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="upper_leg_rl_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="upper_leg_rl_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="upper_leg_rr_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="upper_leg_rr_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="upper_leg_rr_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="lower_leg_fl_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="lower_leg_fl_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="lower_leg_fl_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="lower_leg_fr_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="lower_leg_fr_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="lower_leg_fr_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="lower_leg_rl_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="lower_leg_rl_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="lower_leg_rl_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="lower_leg_rr_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="lower_leg_rr_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="lower_leg_rr_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="foot_fl_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="foot_fl_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="foot_fl_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="foot_fr_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="foot_fr_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="foot_fr_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="foot_rl_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="foot_rl_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="foot_rl_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="foot_rr_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="foot_rr_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="foot_rr_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>

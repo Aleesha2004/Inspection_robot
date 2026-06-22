@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find my_assembly_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="my_assembly" args="upper_leg_fl_joint_position_controller upper_leg_fr_joint_position_controller upper_leg_rl_joint_position_controller upper_leg_rr_joint_position_controller lower_leg_fl_joint_position_controller lower_leg_fr_joint_position_controller lower_leg_rl_joint_position_controller lower_leg_rr_joint_position_controller foot_fl_joint_position_controller foot_fr_joint_position_controller foot_rl_joint_position_controller foot_rr_joint_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/my_assembly/joint_states"/>
+</node>
+
+</launch>
